@@ -1,0 +1,63 @@
+<!DOCTYPE <html>
+    <head>
+        <title>HEART</title>
+        <style>
+        body{
+            display: flex;
+        }
+        .heart {
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            background-color: rgb(255, 0, 0);
+            top: 60%;
+            left: 45%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 0 50px #fd0e42;
+            animation: dap alternate 0.5s infinite;
+        }
+        .heart::before, .heart::after{
+            position: absolute; 
+            width: 120px;
+            height: 120px;
+            content: '';  
+            border-radius: 50%; 
+            background-color: rgba(255, 0, 0);
+            bottom: 0px;
+            left: -58px;
+            right: 1px;
+            box-shadow: 0 0 50px #fd0e42;
+        }
+        .heart::after{
+            top: -58px;
+            left: 0px;
+        }
+
+        @keyframes dap {
+            0% {
+                transform: scale(1) rotateZ(45deg);           
+            }
+            100% {
+                transform: scale(1.2)rotateZ(45deg);            
+            }
+        }
+
+        p{
+            color:rgb(255, 0, 0);
+            font: bolder ;
+            font-size: 60px;
+            font-family: Arial;
+            text-align: center;
+            text-shadow: 0 0 10px #fd0e42;
+            margin: 160px auto;
+        }
+        </style>
+    </head>
+    <body style = "background-color: #110037">
+        <div class = heart>
+        </div>
+        <p>
+            Chúc bạn tuần mới vui vẻ!!
+        </p>
+    </body>
+</html>>
